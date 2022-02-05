@@ -85,7 +85,7 @@ public class TicketDAO {
     }
 
     public int countVehicleRegNumberEntry(String vehicle) {
-        Connection con = null;
+        Connection con;
         int count = 0;
         try {
             con = dataBaseConfig.getConnection();
